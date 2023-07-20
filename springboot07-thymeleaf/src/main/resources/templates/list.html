@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表</title>
+</head>
+<body>
+<form action="" th:object="${user}">
+  用户id：<input name="id" th:value="${user.getId()}">
+  用户姓名：<input type="text" name="username" th:value="${user.getUsername()}">
+  用户密码：<input type="text" name="password" th:value="*{password}">
+</form>
+<hr>
+
+</body>
+</html>
